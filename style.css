@@ -3,13 +3,13 @@
   --page-2-colour: steelblue;
   --page-3-colour: steelblue;
   --page-4-colour: steelblue;
-  --animate-speed: 1s;
+  --animate-speed: 2s;
 }
 
 body{
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
-  color: #ffffff;
+  color: #000000;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -78,29 +78,19 @@ body{
   animation: heading var(--animate-speed) forwards ease-in 1s;
 }
 
-#page-1 pic-1 {
-  transform: translateY(-1800px);
-  animation: heading var(--animate-speed) forwards ease-in 1s;
-}
-}
 
 /*Keyframes*/
 
 @keyframes heading {
   to{
-  tranform: translateY (0);
+    tranform: translateY (0);
   }
 } 
+ 
 
 @keyframes text {
   to{
-  tranform: translateX (0);
-  }
-} 
-
-@keyframes img {
-  to{
-  tranform: translateX (0);
+    tranform: translateX (0);
   }
 } 
 

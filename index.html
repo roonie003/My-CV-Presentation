@@ -11,11 +11,12 @@
   <!--Page 1 (intro)-->
   <section id="page-1" class="page">
     <h1>Runyararo Mutsinze | Junior Frontend Developer</h1>
-    <p> Welcome to my Portfolio</p>
-    <img class="pic-1" src="/img/IMG-20200219-WA0043.jpg">
+    <p> Welcome to My World</p>
+    <img class="me" src="/img/IMG-20200219-WA0043.jpg" width="300px" height="300px">
     <div>
       <a href="#page-2" class="btn">Next Page <i class="fas fa-arrow-down"></i>"</a>
     </div>
+  </section>
 
     <!--Page 2 -->
   <section id="page-2" class="page">
@@ -25,6 +26,7 @@
       <a href="#page-1" class="btn btn-dark">Prev Page <i class="fas fa-arrow-up"></i>"</a>
       <a href="#page-3" class="btn">Next Page <i class="fas fa-arrow-down"></i>"</a>
     </div>
+  </section>
 
     <!--Page 3 -->
   <section id="page-3" class="page">
@@ -34,6 +36,7 @@
       <a href="#page-2" class="btn btn-dark">Prev Page <i class="fas fa-arrow-up"></i>"</a>
       <a href="#page-4" class="btn">Next Page <i class="fas fa-arrow-down"></i>"</a>
     </div>
+  </section>
 
     <!--Page 4 -->
   <section id="page-4" class="page">
@@ -42,18 +45,19 @@
     <div>
       <a href="#page-3" class="btn ">Prev Page <i class="fas fa-arrow-up"></i>"</a>
     </div>
+  </section>
     
 
   </section>
 
   <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
   <script>
-       // Smooth Scrolling
-       $('.btn').on('click', function(event) {
+    // Smooth Scrolling
+    $('.btn').on('click', function(event) {
         if (this.hash !== '') {
           event.preventDefault();
           const hash = this.hash;
@@ -65,7 +69,7 @@
           );
         }
       });
-
   </script>
+
 </body>
 </html>
