@@ -38,11 +38,6 @@ body{
   margin: 1rem;
 }
 
-.page h2 {
-  font-size: 3.5rem;
-  line-height: 1.2;
-  margin: 1rem;
-}
 
 .page p {
   font-size: 1.3rem;
@@ -68,6 +63,45 @@ body{
 }
 
 .btn-dark:hover {
-  background: #ffffff;
+  background: #f4f4f4;
   color: #333333;
 }
+
+/*page animation*/
+#page-1 h1{
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p{
+  transform: translateY(-1800px);
+  animation: heading var(--animate-speed) forwards ease-in 1s;
+}
+
+#page-1 pic-1 {
+  transform: translateY(-1800px);
+  animation: heading var(--animate-speed) forwards ease-in 1s;
+}
+}
+
+/*Keyframes*/
+
+@keyframes heading {
+  to{
+  tranform: translateY (0);
+  }
+} 
+
+@keyframes text {
+  to{
+  tranform: translateX (0);
+  }
+} 
+
+@keyframes img {
+  to{
+  tranform: translateX (0);
+  }
+} 
+
+

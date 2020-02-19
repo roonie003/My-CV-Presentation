@@ -10,9 +10,9 @@
 <body>
   <!--Page 1 (intro)-->
   <section id="page-1" class="page">
-    <h1>Runyararo Mutsinze</h1>
-    <h2>Junior Frontend Developer</h2>
+    <h1>Runyararo Mutsinze | Junior Frontend Developer</h1>
     <p> Welcome to my Portfolio</p>
+    <img class="pic-1" src="/img/IMG-20200219-WA0043.jpg">
     <div>
       <a href="#page-2" class="btn">Next Page <i class="fas fa-arrow-down"></i>"</a>
     </div>
@@ -45,5 +45,27 @@
     
 
   </section>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script>
+       // Smooth Scrolling
+       $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+
+  </script>
 </body>
 </html>
